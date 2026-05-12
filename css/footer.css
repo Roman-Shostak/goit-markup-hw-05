@@ -1,59 +1,54 @@
+/* -------------------------------------------------------------------------- */
+/* Footer                                                                     */
+/* -------------------------------------------------------------------------- */
 .footer {
   padding: 100px 0;
   background-color: var(--navy-blue);
 }
 
-.footer-logo {
-  color: var(--cloud);
-}
-
-.footer-logo-accent {
-  color: var(--iris);
-}
-
-.footer-content-left-text {
-  max-width: 264px;
-  color: var(--cloud);
-}
-
-.footer-content {
+.footer_layout {
   display: flex;
 }
 
-.footer-content-left {
+.footer_brand {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin-right: 120px;
 }
 
-.footer-content-right-title {
-  font-weight: 500;
-  color: var(--white);
-  margin-bottom: 16px;
+.footer_brand_text {
+  max-width: 264px;
+  color: var(--cloud);
 }
 
-.footer-social-links {
+.footer_social_title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.footer_social_list {
   display: flex;
   gap: 16px;
 }
 
-.footer-social-link {
+.footer_social_link {
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  justify-content: center;
   width: 40px;
   height: 40px;
+  border-radius: 50%;
   background-color: var(--iris);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer_social_link:hover,
+.footer_social_link:focus {
   background-color: var(--green);
 }
 
-.footer-social-icon {
+.footer_social_icon {
   fill: var(--cloud);
 }

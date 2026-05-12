@@ -1,22 +1,25 @@
-.features-list {
+/* -------------------------------------------------------------------------- */
+/* Features                                                                   */
+/* -------------------------------------------------------------------------- */
+.features_list {
   display: flex;
   gap: 24px;
 }
 
-.features-item {
+.features_item {
   flex-basis: calc((100% - 72px) / 4);
 }
 
-.features-item-icon {
+.features_item_icon {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 112px;
-  background-color: var(--cloud);
   border: 1px solid var(--light-slate);
   border-radius: 4px;
+  background-color: var(--cloud);
 }
 
-.features-item-title {
+.features_item_title {
   margin: 8px 0;
 }

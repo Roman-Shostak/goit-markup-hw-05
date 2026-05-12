@@ -1,4 +1,7 @@
-.section-hero {
+/* -------------------------------------------------------------------------- */
+/* Hero section                                                               */
+/* -------------------------------------------------------------------------- */
+.hero {
   max-width: 1440px;
   margin: 0 auto;
   padding: 188px 0;
@@ -10,12 +13,11 @@
   background-size: cover;
 }
 
-.hero-container {
+.hero_container {
   text-align: center;
 }
 
-.hero-title {
+.hero_title {
   max-width: 496px;
-  margin: 0 auto;
-  margin-bottom: 48px;
+  margin: 0 auto 48px;
 }

@@ -1,4 +1,7 @@
-.header {
+/* -------------------------------------------------------------------------- */
+/* Page header                                                                */
+/* -------------------------------------------------------------------------- */
+.page-header {
   border-bottom: 1px solid var(--cornflower);
   box-shadow:
     0 1px 6px rgba(46, 47, 66, 0.08),
@@ -6,15 +9,9 @@
     0 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.container.is-header {
-  display: flex;
-  align-items: center;
-}
-
-.address {
-  margin-left: auto;
-}
-
+/* -------------------------------------------------------------------------- */
+/* Logo                                                                       */
+/* -------------------------------------------------------------------------- */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -25,41 +22,47 @@
   color: var(--navy-blue);
 }
 
-.header-logo {
+.logo--header {
   margin-right: 76px;
 }
 
-.logo-accent {
+.logo_accent {
   color: var(--iris);
 }
 
-.nav-list {
+.logo--footer {
+  color: var(--cloud);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Main navigation                                                            */
+/* -------------------------------------------------------------------------- */
+.main-nav_list {
   display: flex;
   gap: 40px;
 }
 
-.nav-link {
+.main-nav_link {
   position: relative;
   display: inline-block;
   padding: 24px 0;
   font-weight: 500;
   color: var(--navy-blue);
-  text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link.active,
-.nav-link:hover,
-.nav-link:focus {
+.main-nav_link--active,
+.main-nav_link:hover,
+.main-nav_link:focus {
   color: var(--ocean);
 }
 
-.nav-link::after {
+.main-nav_link::after {
   content: '';
-  display: block;
   position: absolute;
-  left: 0;
   bottom: 0;
+  left: 0;
+  display: block;
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -68,22 +71,29 @@
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link.active::after {
+.main-nav_link--active::after {
   opacity: 1;
 }
 
-.contact-list {
+/* -------------------------------------------------------------------------- */
+/* Header contacts                                                            */
+/* -------------------------------------------------------------------------- */
+.contacts {
+  margin-left: auto;
+  font-style: normal;
+}
+
+.contacts_list {
   display: flex;
   gap: 40px;
 }
 
-.contact-link {
+.contacts_link {
   color: var(--slate);
-  text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contacts_link:hover,
+.contacts_link:focus {
   color: var(--ocean);
 }
