@@ -60,26 +60,29 @@
 .footer_form_field {
   width: 264px;
   height: 40px;
+  margin-right: 24px;
   padding: 13px 16px;
   padding-top: 10px;
-  margin-right: 24px;
-  background-color: transparent;
-  border-radius: 4px;
   border: 1px solid var(--white);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
   color: var(--white);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer_form_field::placeholder {
   font-size: 12px;
-  line-height: 1.166;
+  line-height: 2;
   letter-spacing: 0.04em;
   color: var(--white);
 }
 
 .footer_form_field:hover,
-.footer_form_field:focus-within {
-  border: 1px solid var(--green);
+.footer_form_field:focus {
+  border-color: var(--green);
 }
 
 .footer_form_field:focus,
@@ -109,7 +112,8 @@
   border: none;
 }
 
-.footer_form_button:hover {
+.footer_form_button:hover,
+.footer_form_button:focus {
   background-color: var(--green);
 }
 

@@ -109,7 +109,17 @@
   border: 1px solid var(--navy-blue-modal);
   border-radius: 4px;
   outline: none;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form_field::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--navy-blue-modal);
 }
 
 .modal-form_field--textarea {
@@ -117,13 +127,6 @@
   margin-bottom: 16px;
   padding: 8px 16px;
   resize: none;
-}
-
-.modal-form_field--textarea::placeholder {
-  font-size: 12px;
-  line-height: 1.1666;
-  letter-spacing: 0.04em;
-  color: var(--navy-blue-modal);
 }
 
 .modal-form_field-wrap:hover .modal-form_field,
