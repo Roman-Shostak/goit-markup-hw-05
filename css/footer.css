@@ -52,3 +52,31 @@
 .footer_social_icon {
   fill: var(--cloud);
 }
+
+.footer_form {
+  margin-left: auto;
+}
+
+.footer_form_field {
+  width: 264px;
+  height: 40px;
+  padding: 13px 16px;
+  padding-top: 10px;
+  margin-right: 24px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+.footer_form_field::placeholder {
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+
+.footer_social_title.is-label {
+  display: block;
+  margin-bottom: 16px;
+}

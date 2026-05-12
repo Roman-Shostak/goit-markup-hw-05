@@ -485,7 +485,7 @@
       </section>
     </main>
     <footer class="footer" id="footer">
-      <div class="container">
+      <div class="container flex-h">
         <div class="footer_layout">
           <div class="footer_brand">
             <a class="logo logo--footer link" href="./index.html"
@@ -533,9 +533,26 @@
             </ul>
           </div>
         </div>
+        <form class="footer_form">
+          <label class="footer_social_title is-label" for="footer-email">Subscribe</label>
+          <div class="footer_form_field-wrap">
+            <input
+              class="footer_form_field"
+              type="email"
+              name="email"
+              id="footer-email"
+              placeholder="E-mail"
+            />
+            <button class="footer_form_button" type="submit">
+              Subscribe
+              <svg class="footer_form_button-icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
-
     <div class="modal_overlay">
       <div class="modal_window">
         <button class="modal_close" type="button">
